@@ -7,7 +7,7 @@ var PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
+app.use(express.static('assets'));
 
 // require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
